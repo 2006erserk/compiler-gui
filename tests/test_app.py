@@ -505,7 +505,7 @@ class InterfaceTest(AppTestCase):
         collect(about)
         joined = "\n".join(labels)
         for expected in ("Go Complex Declaration Editor", "Версия", "Python 3",
-                         "Методы трансляции и компиляции"):
+                         "Методы трансляции, спецификации и верификации программ"):
             self.assertIn(expected, joined)
         about.destroy()
 
